@@ -2,28 +2,99 @@
 recherche dichotomique versus séquentielle
 # TP Python — Recherche séquentielle vs recherche dichotomique
 
-Projet réalisé par **Yanis KHELIF**.
+# Comparaison : Recherche Linéaire vs Recherche Dichotomique
 
-Ce projet illustre et compare deux algorithmes classiques de recherche dans un tableau :
-- la **recherche séquentielle**
-- la **recherche dichotomique** (ou recherche binaire)
+Ce projet illustre et compare deux algorithmes fondamentaux de recherche dans une liste :
 
-Il met en évidence leurs différences de **performance** à l’aide de mesures de temps d’exécution et d’un graphique comparatif.
+-  **Recherche linéaire (séquentielle)**
+- **Recherche dichotomique (binaire)**
 
----
-
-## 📁 Fichier du projet
-
-- `RechercheDico_yk.py`  
-  Script Python contenant :
-  - l’implémentation des deux méthodes de recherche
-  - des tests simples de validation
-  - une comparaison expérimentale des temps d’exécution
-  - un affichage graphique des performances
+L’objectif est de comprendre leur fonctionnement, leur complexité et leurs performances.
 
 ---
 
-## 🎯 Objectifs pédagogiques
+## Structure du projet
+
+.
+├── comparaison_recherche.py   # script principal
+├── comparaison.png            # graphique généré par le programme
+└── README.md
+
+
+
+
+
+## Installation
+
+Assurez-vous d’avoir Python 3 installé.
+
+Installer matplotlib si nécessaire :
+
+pip install matplotlib
+
+---
+
+## Démo : exécution du programme
+
+Lancer le script :
+
+python comparaison_recherche.py
+
+Le programme va :
+
+1. tester les fonctions de recherche  
+2. mesurer les temps d’exécution  
+3. comparer les performances  
+4. afficher un graphique  
+
+---
+
+## Exemple d’utilisation dans Python
+
+```python
+from comparaison_recherche import recherche_lineaire, recherche_dichotomique
+
+liste = [2, 5, 8, 12, 16, 23, 38]
+
+print(recherche_lineaire(liste, 23))
+print(recherche_dichotomique(liste, 23))
+```
+
+Sortie :
+
+5
+5
+
+---
+
+##  Visualisation générée
+
+Le script produit un graphique comparant les performances.
+
+L’image `comparaison.png` correspond à la sortie générée automatiquement par le code.  
+Elle montre l’évolution du temps d’exécution selon la taille des données.
+
+ Elle permet de visualiser :
+
+- la croissance linéaire de la recherche séquentielle  
+- la croissance logarithmique de la recherche dichotomique  
+
+Vous pouvez régénérer cette image en exécutant le script.
+
+---
+
+##  Comment fonctionne le programme ?
+
+Le script :
+
+✔ génère des tableaux triés aléatoires  
+✔ recherche un élément avec les deux méthodes  
+✔ mesure les temps d’exécution  
+✔ trace un graphique comparatif  
+
+---
+
+## Objectifs
 
 - Comprendre le fonctionnement :
   - de la **recherche séquentielle**
@@ -32,10 +103,9 @@ Il met en évidence leurs différences de **performance** à l’aide de mesures
 - Comprendre pourquoi la recherche dichotomique est plus efficace sur un tableau **trié**
 - Introduire la notion de **complexité algorithmique** (O(n) vs O(log n))
 
+## Auteur
+
+**Yanis K.**  
 ---
 
-## 🧠 Algorithmes implémentés
 
-### 🔹 Recherche dichotomique
-```python
-recherche_dt(tab, element)
