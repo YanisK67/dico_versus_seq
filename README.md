@@ -1,6 +1,3 @@
-# recherche_lineaire_vs_dichotomique
-recherche dichotomique versus séquentielle
-# TP Python — Recherche séquentielle vs recherche dichotomique
 
 # Comparaison : Recherche Linéaire vs Recherche Dichotomique
 
@@ -12,17 +9,6 @@ Ce projet illustre et compare deux algorithmes fondamentaux de recherche dans un
 L’objectif est de comprendre leur fonctionnement, leur complexité et leurs performances.
 
 ---
-
-## Structure du projet
-
-.
-├── comparaison_recherche.py   # script principal
-├── comparaison.png            # graphique généré par le programme
-└── README.md
-
-
-
-
 
 ## Installation
 
